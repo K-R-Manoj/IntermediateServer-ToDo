@@ -4,5 +4,6 @@ const CONFIG = {
     JWT_EXPIRY_TIME_IN_SEC: process.env.JWT_EXPIRY_TIME_IN_SEC,
     CLIENT_ID:process.env.CLIENT_ID,
     CLIENT_SECRET: process.env.CLIENT_SECRET,
+    REDIRECT_URI:process.env.REDIRECT_URI,
 }
 export default CONFIG;

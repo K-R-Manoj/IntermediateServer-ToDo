@@ -4,7 +4,7 @@ export const getAuthInfo = async () => {
     const baseUrl = 'https://todo-app-users.auth.us-east-1.amazoncognito.com';
     const clientId = CONFIG.CLIENT_ID;
     const clientSecret = CONFIG.CLIENT_SECRET;
-    const redirectUri = 'http://localhost:4200';
+    const redirectUri = CONFIG.REDIRECT_URI;
     
     return {
         baseUrl,
