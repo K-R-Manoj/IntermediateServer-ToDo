@@ -73,6 +73,7 @@ export const verifyAuthentication = async (req, res, next) => {
     return res.status(200).send({
       cognitoAccessToken: accessToken,
       userDetails,
+      userDetailsOptions,
       token: jwt,
       tokenExpiresAt: date + CONFIG.JWT_EXPIRY_TIME_IN_SEC * 1000,
     });
